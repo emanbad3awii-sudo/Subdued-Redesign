@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Subdued is a fashion brand that embodies a soft streetwear mood with a calm Pinterest aesthetic.">
+  <meta name="keywords" content="Subdued, fashion, streetwear, soft aesthetic, modern fashion, Italian heritage">
+  <meta name="author" content="Eman, Mona, Aya, Layla">
+  <title>Subdued | Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+<!--header and navigation-->
+<header class="site-header">
+  <img src="images/logo.png" alt="Subdued logo" class="logo">
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<main>
+<!--page title-->
+  <section class="page-title">
+    <p class="mini-title">our collections</p>
+    <h1>Shop the Look</h1>
+
+  <!-- This text is hidden on mobile to keep the focus on the products -->
+    <p id="hide-mobile">Effortless fashion, all in one place.</p>
+  </section>
+<!--product categories-->
+  <section class="shop-category">
+    <h2>Tops</h2>
+
+    <div class="product-grid">
+<!--tops section-->
+    <article class="product-card">
+  <img id="top1-img" class="reflect-img" src="images/top1_pink.png" alt=" Tie front Top">
+
+  <h3>Ruched Tie-Front Top</h3>
+  <p>BD 11.000</p>
+
+  <div class="color-buttons">
+    <button onclick="setImageSwap('top1-img', 'images/top1_pink.png', 'images/top1_pink_swap.png')">Pink</button>
+    <button onclick="setImageSwap('top1-img', 'images/top1_white.png', 'images/top1_white_swap.png')">White</button>
+
+  </div>
+
+  <button onclick="addToCart('Ruched Tie-Front Top', 11, document.getElementById('top1-img').src)">Add to Cart</button>
+  <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+</article>
+
+<article class="product-card">
+  <img id="top2-img" class="reflect-img" src="images/top2_navy.png" alt="Round neck top">
+
+  <h3>Round neck top with buttons</h3>
+  <p>BD 11.000</p>
+
+  <div class="color-buttons">
+    <button onclick="setImageSwap('top2-img', 'images/top2_navy.png', 'images/top2_navy_swap.png')">Navy</button>
+    <button onclick="setImageSwap('top2-img', 'images/top2_pink.png', 'images/top2_pink_swap.png')">Pink</button>
+  </div>
+
+  <button onclick="addToCart('Round neck top with buttons', 11, document.getElementById('top2-img').src)">Add to Cart</button>
+  <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+</article>
+
+<article class="product-card">
+  <img id="top3-img" class="reflect-img" src="images/top3_dotted.png" alt="Square neckline top">
+
+  <h3>Square neckline top</h3>
+  <p>BD 11.000</p>
+
+  <div class="color-buttons">
+    <button onclick="setImageSwap('top3-img', 'images/top3_dotted.png', 'images/top3_dotted_swap.png')">Dotted</button>
+    <button onclick="setImageSwap('top3-img', 'images/top3_grey.png', 'images/top3_grey_swap.png')">Grey</button>
+  </div>
+
+  <button onclick="addToCart('Square neckline top', 11, document.getElementById('top3-img').src)">Add to Cart</button>
+  <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+</article>
+
+    </div>
+  </section>
+<!--pants section-->
+  <section class="shop-category">
+    <h2>Pants</h2>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <img src="images/pant1.png" alt="Wide leg pants"
+             onmouseover="swapImageOnly(this, 'images/pant1_swap.png')"
+             onmouseout="swapImageOnly(this, 'images/pant1.png')">
+        <h3>Wide Leg Pants</h3>
+        <p>BD 23.000</p>
+        <button onclick="addToCart('Wide Leg Pants', 23, 'images/pant1.png')">Add to Cart</button>
+        <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+      </article>
+
+      <article class="product-card">
+        <img src="images/pant2.png" alt="khaki pants"
+             onmouseover="swapImageOnly(this, 'images/pant2_swap.png')"
+             onmouseout="swapImageOnly(this, 'images/pant2.png')">
+        <h3>Khaki Textured Pants</h3>
+        <p>BD 23.000</p>
+        <button onclick="addToCart('Khaki Textured Pants', 23, 'images/pant2.png')">Add to Cart</button>
+        <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+      </article>
+
+      <article class="product-card">
+        <img src="images/pant3.png" alt="Wide leg joggers"
+             onmouseover="swapImageOnly(this, 'images/pant3_swap.png')"
+             onmouseout="swapImageOnly(this, 'images/pant3.png')">
+        <h3>Navy Wide Leg Joggers</h3>
+        <p>BD 21.000</p>
+        <button onclick="addToCart('Navy Wide Leg Joggers', 21, 'images/pant3.png')">Add to Cart</button>
+        <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+      </article>
+
+    </div>
+  </section>
+
+  <!--hoodies section-->
+  <section class="shop-category">
+    <h2>Hoodies</h2>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <img src="images/hoodie1.png" alt="Oversized grey hoodie"
+             onmouseover="swapImageOnly(this, 'images/hoodie1_swap.png')"
+             onmouseout="swapImageOnly(this, 'images/hoodie1.png')">
+        <h3>Oversized grey Hoodie</h3>
+        <p>BD 24.000</p>
+        <button onclick="addToCart('Oversized grey Hoodie', 24, 'images/hoodie1.png')">Add to Cart</button>
+        <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+      </article>
+
+      <article class="product-card">
+        <img src="images/hoodie2.png" alt="Navy blue hoodie"
+             onmouseover="swapImageOnly(this, 'images/hoodie2_swap.png')"
+             onmouseout="swapImageOnly(this, 'images/hoodie2.png')">
+        <h3>Navy Blue Hoodie</h3>
+        <p>BD 22.000</p>
+        <button onclick="addToCart('Navy Blue Hoodie', 22, 'images/hoodie2.png')">Add to Cart</button>
+        <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+      </article>
+
+      <article class="product-card">
+        <img src="images/hoodie3.png" alt="Strapped zip hoodie"
+             onmouseover="swapImageOnly(this, 'images/hoodie3_swap.png')"
+             onmouseout="swapImageOnly(this, 'images/hoodie3.png')">
+        <h3>Strapped Zip Hoodie</h3>
+        <p>BD 23.000</p>
+        <button onclick="addToCart('Strapped Zip Hoodie', 23, 'images/hoodie3.png')">Add to Cart</button>
+        <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+      </article>
+
+    </div>
+  </section>
+<!--accessories section-->
+  <section class="shop-category">
+    <h2>Accessories</h2>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <img src="images/acc1.png" alt="beauty case"
+             onmouseover="swapImageOnly(this, 'images/acc1_swap.png')"
+             onmouseout="swapImageOnly(this, 'images/acc1.png')">
+        <h3>Wings Beauty Case</h3>
+        <p>BD 10.000</p>
+        <button onclick="addToCart('Wings Beauty Case', 10, 'images/acc1.png')">Add to Cart</button>
+        <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+      </article>
+
+      <article class="product-card">
+        <img src="images/acc2.png" alt="pink wings keychain"
+             onmouseover="swapImageOnly(this, 'images/acc2_swap.png')"
+             onmouseout="swapImageOnly(this, 'images/acc2.png')">
+        <h3>Wings Keychain</h3>
+        <p>BD 5.000</p>
+        <button onclick="addToCart('Wings Keychain', 5, 'images/acc2.png')">Add to Cart</button>
+        <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+      </article>
+
+      <article class="product-card">
+        <img src="images/acc3.png" alt="Brown shopping bag"
+             onmouseover="swapImageOnly(this, 'images/acc3_swap.png')"
+             onmouseout="swapImageOnly(this, 'images/acc3.png')">
+        <h3>Brown Shopping Bag</h3>
+        <p>BD 26.000</p>
+        <button onclick="addToCart('Brown Shopping Bag', 26, 'images/acc3.png')">Add to Cart</button>
+        <button class="fav-btn" onclick="addToFavorites(this)">♡ Favorite</button>
+      </article>
+
+    </div>
+  </section>
+ 
+  <!--cart box-->
+  <section class="cart-box">
+    <h2>Cart Items: <span id="cart-count">0</span></h2>
+    <a href="cart.html" class="main-btn">View Cart</a>
+  </section>
+
+</main>
+<!--footer-->
+<footer>
+  <p>©2026 Subdued. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

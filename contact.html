@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Subdued is a fashion brand that embodies a soft streetwear mood with a calm Pinterest aesthetic.">
+  <meta name="keywords" content="Subdued, fashion, streetwear, soft aesthetic, modern fashion, Italian heritage">
+  <meta name="author" content="Eman, Mona, Aya, Layla">
+  <title>Subdued | Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+
+<header class="site-header">
+  <img src="images/logo.png" alt="Subdued logo" class="logo">
+<!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+<!--main page content-->
+<main>
+<!-- Page Title -->
+  <section class="page-title">
+    <p class="mini-title">connect with us</p>
+    <h1>Contact & Style Quiz</h1>
+  </section>
+
+  <section class="contact-layout">
+
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+<!--form -->
+      <form onsubmit="return validateForm()">
+        <label for="name">Name</label>
+<input type="text" id="name" placeholder="Your name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+
+      <p id="form-result"></p>
+    </div>
+<!--Style Quiz -->
+    <div class="contact-card quiz-card">
+      <h2>Style Quiz</h2>
+      <p>Answer two quick questions to get a helpful outfit recommendation.</p>
+
+      <p>1. What are you shopping for today?</p>
+      <select id="category-choice">
+        <option value="">Choose one</option>
+        <option value="soft">Tops and accessories</option>
+        <option value="minimal">Pants and basics</option>
+        <option value="street">Hoodies and casual outfits</option>
+      </select>
+
+      <p>2. What style mood do you prefer?</p>
+      <select id="mood-choice">
+        <option value="">Choose one</option>
+        <option value="soft">Soft and feminine</option>
+        <option value="minimal">Clean and simple</option>
+        <option value="street">Oversized and relaxed</option>
+      </select>
+
+      <button onclick="showQuizResult()">See My Style</button>
+
+      <div id="quiz-result" class="quiz-result"></div>
+    </div>
+
+  </section>
+
+</main>
+<!--footer-->
+<footer>
+  <p>©2026 Subdued. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

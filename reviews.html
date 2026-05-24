@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Subdued is a fashion brand that embodies a soft streetwear mood with a calm Pinterest aesthetic.">
+  <meta name="keywords" content="Subdued, fashion, streetwear, soft aesthetic, modern fashion, Italian heritage">
+  <meta name="author" content="Eman, Mona, Aya, Layla">
+  <title>Subdued | Reviews</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+<!--header and navigation-->
+<header class="site-header">
+  <img src="images/logo.png" alt="Subdued logo" class="logo">
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<main>
+<!--page title-->
+  <section class="page-title">
+    <p class="mini-title">customer mood</p>
+    <h1>Customer Reviews</h1>
+    <p>Honest reviews and styling inspiration from real shoppers.</p>
+  </section>
+<!--reviews section-->
+  <section class="review-grid">
+
+    <article class="review-card">
+      <video controls>
+        <source src="videos/review1.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <h3>Emily Chen</h3>
+      <p>“The pieces are easy to style and feel comfortable.”</p>
+    </article>
+    
+    <article class="review-card">
+      <video controls>
+        <source src="videos/review2.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <h3>Sofia Martinez</h3>
+      <p>“I love the oversized hoodie and the color palette.”</p>
+    </article>
+    <article class="review-card">
+      <video controls>
+        <source src="videos/review3.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <h3>Katie Johnson</h3>
+      <p>“The outfit looks simple but still trendy.”</p>
+    </article>
+  </section>
+<!--gallery section-->
+  <section class="gallery-preview">
+    <h2>Lookbook</h2>
+
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpeg" alt="Gallery 1" onclick="openLightbox(this.src)">
+      <img src="images/gallery2.jpeg" alt="Gallery 2" onclick="openLightbox(this.src)">
+      <img src="images/gallery3.jpeg" alt="Gallery 3" onclick="openLightbox(this.src)">
+      <img src="images/gallery4.jpeg" alt="Gallery 4" onclick="openLightbox(this.src)">
+      <img src="images/gallery5.jpeg" alt="Gallery 5" onclick="openLightbox(this.src)">
+    </div>
+  </section>
+<!--lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="#" alt="Enlarged gallery image">
+  </div>
+
+</main>
+
+<footer>
+  <p>©2026 Subdued. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
